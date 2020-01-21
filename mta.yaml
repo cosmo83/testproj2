@@ -1,0 +1,17 @@
+ID: testproj2
+_schema-version: '2.1'
+version: 0.0.1
+
+modules:
+ - name: ui
+   type: html5
+   path: ui
+   parameters:
+      disk-quota: 512M
+      memory: 96M
+   build-parameters:
+      builder: grunt
+   requires:
+    - name: uaa_testproj
+    - name: dest_testproj
+
